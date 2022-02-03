@@ -1,8 +1,16 @@
 body{
     background: #1e003d;
     color: white;
+    text-align: center;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     margin: 20px;
+}
+
+.flexcontainer1{ /* Hacemos uso de flexbox indicando el contenedor */
+    background: black;
+    padding: 20 px;
+    display: flex; /* En lugar de utilizar la regla float, podemos usar display a través de flexbox */
+    flex-direction: row; /* Se ubican los elementos en forma horizontal (row) o vertical (column)*/
 }
 
 .box{
