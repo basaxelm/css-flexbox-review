@@ -13,6 +13,9 @@ body{
     /*flex-direction: row;  Se ubican los elementos en forma horizontal (row) o vertical (column)*/
     /*flex-wrap: wrap;      Permite que el contenedor se pueda expandir si se acumulan muchos elementos */
     flex-flow: row wrap; /* Combina las dos reglas anteriores en una sola linea*/
+    justify-content: center; /* Permite reubicar los elementos, en este caso al medio */
+    height: 500px;
+    align-items: flex-start; /* Los elementos se alinearan de acuerdo a un tamaño */
     margin: 0px auto; /* Se centra el contenedor */
 }
 
@@ -21,10 +24,10 @@ body{
     background-color: blueviolet;
     color: white;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    width: 150px;
-    height: 150px;
     line-height: 150px;
     text-align: center;
+    /* width: 100px;    Notese que tanto width como height no funcionan */
+    /* height: 100px;   pero, los elementos se alinean gracias a align-items :) */
     margin: 20px;
 }
 
