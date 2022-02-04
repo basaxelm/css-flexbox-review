@@ -11,6 +11,8 @@ body{
     padding: 20 px;
     display: flex; /* En lugar de utilizar la regla float, podemos usar display a través de flexbox */
     flex-direction: row; /* Se ubican los elementos en forma horizontal (row) o vertical (column)*/
+    flex-wrap: wrap; /* Permite que el contenedor se pueda expandir si se acumulan muchos elementos */
+    margin: 0px auto; /* Se centra el contenedor */
 }
 
 .box{
