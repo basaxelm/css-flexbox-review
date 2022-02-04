@@ -106,3 +106,11 @@ body{
     border-radius: 10px;
     order: 8;
 }
+
+.footp{
+    display: flex;
+    justify-content: center;
+    align-content: space-around;
+    align-items: flex-end;
+    margin:20px;
+}
