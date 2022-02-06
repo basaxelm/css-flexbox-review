@@ -37,16 +37,13 @@ body{
 }
 
 .navmenu ul{
-    /* border: 5px solid rgb(255, 0, 234); */
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-around;
 }
 
 .navmenu ul li{
-    /* border: 5px solid rgb(2, 204, 255); */
     list-style: none;
-    
 }
 
 .navmenu ul li a{
@@ -54,13 +51,13 @@ body{
 }
 
 .midpage{
-    background: rgb(252, 0, 168);
+    background: black;
     display: flex;
     flex-flow: row nowrap;
 }
 
 .sidemenu{
-    /* border: 5px solid green; */
+    
     background: rgb(99, 0, 0);
     padding: 10px;
     width: 20%;
@@ -82,14 +79,14 @@ body{
     /*flex-wrap: wrap;      Permite que el contenedor se pueda expandir si se acumulan muchos elementos */
     flex-flow: row wrap; /* Combina las dos reglas anteriores en una sola linea*/
     justify-content: space-around; /* Permite reubicar los elementos horizontalmente */
-    align-content: space-around; /* Permite reubicar los elementos verticalmente */
+    align-content: center; /* Permite reubicar los elementos verticalmente */
     align-items: flex-start; /* Los elementos se alinearan de acuerdo a un tamaño */
     order: 1;
 }
 
 .box1{
     background: darkgray;
-    width: 250px;    
+    width: 22%;    
     height: 450px;
     display: flex;
     flex-flow: column nowrap;
@@ -108,7 +105,7 @@ body{
 
 .box2{
     background: darkcyan;
-    width: 250px;    
+    width: 22%;    
     height: 450px;
     display: flex;
     flex-flow: column nowrap;
@@ -127,7 +124,7 @@ body{
 
 .box3{
     background: darkolivegreen;
-    width: 250px;    
+    width: 22%;    
     height: 450px;
     display: flex;
     flex-flow: column nowrap;
@@ -146,7 +143,7 @@ body{
 
 .box4{
     background: darkgreen;
-    width: 250px;    
+    width: 22%;    
     height: 450px;
     display: flex;
     flex-flow: column nowrap;
@@ -168,3 +165,7 @@ body{
     color: white;
     text-align: center;
 }
+
+/*  @media screen and (min-width: 500){
+    d
+} */
