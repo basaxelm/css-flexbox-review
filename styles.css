@@ -11,8 +11,22 @@ body{
 }
 
 .header{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.imgicon{
+    content:url(skyrim/helmeticon.png);
+    max-width: 5%;
+    height: auto;
+    order: 1;
+}
+
+.header h1{
     color: white;
-    text-align: center;
+    order: 2;
 }
 
 .navmenu{
