@@ -16,7 +16,6 @@ body{
 }
 
 .navmenu{
-    /* border: 5px solid green; */
     background: black;
     display: flex;
     flex-flow: column nowrap;
@@ -40,111 +39,118 @@ body{
     color: white;
 }
 
-.flexcontainer1{ /* Hacemos uso de flexbox indicando el contenedor */
+.midpage{
+    background: rgb(252, 0, 168);
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+.sidemenu{
+    /* border: 5px solid green; */
+    background: rgb(99, 0, 0);
+    padding: 10px;
+    width: 20%;
+    color: white;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: top;
+    align-items: flex-start;
+    order: 2;
+}
+
+.container1{ /* Hacemos uso de flexbox indicando el contenedor */
     background: black;
-    padding: 20 px;
+    color: white;
+    width: 80%;
+    height: 500px;
     display: flex; /* En lugar de utilizar la regla float, podemos usar display a través de flexbox */
     /*flex-direction: row;  Se ubican los elementos en forma horizontal (row) o vertical (column)*/
     /*flex-wrap: wrap;      Permite que el contenedor se pueda expandir si se acumulan muchos elementos */
     flex-flow: row wrap; /* Combina las dos reglas anteriores en una sola linea*/
     justify-content: space-around; /* Permite reubicar los elementos horizontalmente */
     align-content: space-around; /* Permite reubicar los elementos verticalmente */
-    width: 80%;
-    height: 500px;
     align-items: flex-start; /* Los elementos se alinearan de acuerdo a un tamaño */
-    margin: 0px auto; /* Se centra el contenedor */
+    order: 1;
 }
-
-/*.box{
-    border: 1px solid black;
-    background-color: blueviolet;
-    color: white;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    line-height: 150px;
-    text-align: center;
-    width: 150px;    
-    height: 150px;   
-    margin: 20px;
-} Dado que se modifico las clases, está queda en desuso */
 
 .box1{
     background: darkgray;
-    order: 1; /* Especifica el orden en que aparecerá el elemento */
-    width: 150px;    
-    height: 150px;
-    line-height: 150px; /* Permite centrar el texto verticalmente */
-    flex-grow: 1;  
-    margin: 10px;
+    width: 250px;    
+    height: 450px;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: top;
+    align-items: center;
+    order: 2; /* Especifica el orden en que aparecerá el elemento */
 } 
 
 .img1{
     content:url(skyrim/valthume.png);
-    max-width: 15%;
+    max-width: 95%;
     height: auto;
     border-radius: 10px;
-    order: 5;
+    order: 2;
 }
 
 .box2{
     background: darkcyan;
-    order: 2;
-    width: 150px;    
-    height: 150px;
-    line-height: 150px;
-    flex-grow: 2; /* Determina qué tan ancho será el elemento de acuerdo a su prioridad (Prioridad>1)) */
-    flex-basis: 30%; /* Es como un width, pero combina mejor con flex-grow */
-    margin: 10px;
+    width: 250px;    
+    height: 450px;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: top;
+    align-items: center;
+    order: 1;
 }
 
 .img2{
     content:url(skyrim/laberynthia.jpg);
-    max-width: 30%;
+    max-width: 95%;
     height: auto;
     border-radius: 10px;
-    order: 6;
+    order: 2;
 }
 
 .box3{
     background: darkolivegreen;
+    width: 250px;    
+    height: 450px;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: top;
+    align-items: center;
     order: 3;
-    width: 150px;    
-    height: 150px;
-    line-height: 150px;
-    flex-grow: 2;
-    flex-basis: 30%;
-    margin: 10px;
 }
 
 .img3{
     content:url(skyrim/ysgramortumb.png);
-    max-width: 30%;
+    max-width: 95%;
     height: auto;
     border-radius: 10px;
-    order: 7;
+    order: 2;
 }
 
 .box4{
     background: darkgreen;
+    width: 250px;    
+    height: 450px;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: top;
+    align-items: center;
     order: 4;
-    width: 150px;    
-    height: 150px;
-    line-height: 150px;
-    flex-grow: 1;
-    margin: 10px;
 }
 
 .img4{
     content:url(skyrim/ustengrav.jpg);
-    max-width: 15%;
+    max-width: 95%;
     height: auto;
     border-radius: 10px;
-    order: 8;
+    order: 2;
 }
 
 .footp{
-    display: flex;
-    justify-content: center;
-    align-content: space-around;
-    align-items: flex-end;
-    margin:20px;
+    padding: 20px;
+    color: white;
+    text-align: center;
 }
