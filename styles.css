@@ -25,7 +25,10 @@ body{
 }
 
 .header h1{
+    width: 20%;
+    height: auto;
     color: white;
+    text-align: center;
     order: 2;
 }
 
@@ -37,6 +40,7 @@ body{
 }
 
 .navmenu ul{
+    padding: 0px;
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-around;
@@ -44,6 +48,9 @@ body{
 
 .navmenu ul li{
     list-style: none;
+    width: 100%;
+    height: auto;
+    text-align: center;
 }
 
 .navmenu ul li a{
@@ -57,16 +64,26 @@ body{
 }
 
 .sidemenu{
-    
     background: rgb(99, 0, 0);
     padding: 10px;
     width: 20%;
+    height: auto;
     color: white;
     display: flex;
     flex-flow: column nowrap;
     justify-content: top;
     align-items: flex-start;
     order: 2;
+}
+
+.sidemenu h2{
+    width: 100%;
+    height: auto;
+    text-align: left;
+}
+
+.inputbar{
+    width: 50%;
 }
 
 .container1{ /* Hacemos uso de flexbox indicando el contenedor */
@@ -95,6 +112,12 @@ body{
     order: 2; /* Especifica el orden en que aparecerá el elemento */
 } 
 
+.box1 h4{
+    width: 100%;
+    height: auto;
+    text-align: center;
+}
+
 .img1{
     content:url(skyrim/valthume.png);
     max-width: 95%;
@@ -112,6 +135,12 @@ body{
     justify-content: top;
     align-items: center;
     order: 1;
+}
+
+.box2 h4{
+    width: 100%;
+    height: auto;
+    text-align: center;
 }
 
 .img2{
@@ -133,6 +162,12 @@ body{
     order: 3;
 }
 
+.box3 h4{
+    width: 100%;
+    height: auto;
+    text-align: center;
+}
+
 .img3{
     content:url(skyrim/ysgramortumb.png);
     max-width: 95%;
@@ -152,6 +187,12 @@ body{
     order: 4;
 }
 
+.box4 h4{
+    width: 100%;
+    height: auto;
+    text-align: center;
+}
+
 .img4{
     content:url(skyrim/ustengrav.jpg);
     max-width: 95%;
@@ -163,6 +204,7 @@ body{
 .footp{
     padding: 20px;
     color: white;
+    font-size: 100%;
     text-align: center;
 }
 
