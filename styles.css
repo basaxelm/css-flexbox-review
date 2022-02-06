@@ -1,9 +1,43 @@
 body{
+    padding: 0px; /* Conviene especificar estas propiedades siempre */
+    margin: 0px; /* Los navegadores suelen aplicar algo de padding y margin en default */
     background: #1e003d;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.mainhead{
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.header{
     color: white;
     text-align: center;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    margin: 20px;
+}
+
+.navmenu{
+    /* border: 5px solid green; */
+    background: black;
+    display: flex;
+    flex-flow: column nowrap;
+    align-content: center;
+}
+
+.navmenu ul{
+    /* border: 5px solid rgb(255, 0, 234); */
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+}
+
+.navmenu ul li{
+    /* border: 5px solid rgb(2, 204, 255); */
+    list-style: none;
+    
+}
+
+.navmenu ul li a{
+    color: white;
 }
 
 .flexcontainer1{ /* Hacemos uso de flexbox indicando el contenedor */
