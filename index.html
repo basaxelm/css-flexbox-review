@@ -10,11 +10,13 @@
 <body>
     <div class="mainhead">
         <header class="header">
+            <div class="imgicon"></div> <!--Es una caja(contenedor) pero los elementos dentro de "div"
+                no necesariamente se tiene que relacionar o tener sentido"-->
             <h1> Skyrim Ruins Locations </h1>
-            <div class="imgicon"></div>
         </header>
         
-        <nav class="navmenu">
+        <nav class="navmenu"> <!--Generalmente es usado como contenedor
+            para los links/botones de la barra de inicio(encabezado superior)-->
             <ul>
                 <li>
                     <a href="index.html"> Main </a>
@@ -39,42 +41,37 @@
         </nav>
 
         <div class="midpage">
-            <aside class="sidemenu">
+            <aside class="sidemenu"> <!--<aside></aside> Es lo mismo, una caja(contenedor) pero semánticamente significa una barra lateral-->
                 <h2> ¿Buscás algo? </h2>
                 <input class="inputbar" type="text"/>
                 <input type="submit" value="Buscar"/>
             </aside>
 
-            <section class="container1"> <!-- Contenedor a usar con flexbox -->
-                <article class="box1">
+            <section class="container1"> <!--Es una caja(contenedor) pero los elementos dentro de "section"
+                se relacionan o sea tienen sentido"-->
+                <article class="box1"> <!-- <article></article> Es una caja(contenedor) pero los elementos y el CONTENIDO dentro de "article"
+                    se relacionan o sea tienen sentido entre sí"-->
                     <h4> Valthume </h4>
                     <div class="img1"></div>
                 </article>
-                
                 
                 <article class="box2">
                     <h4> Laberynthia </h4>
                     <div class="img2"></div>
                 </article>
-                
         
                 <article class="box3">
                     <h4> Ysgramor's Tomb </h4>
                     <div class="img3"></div>
                 </article>
-                
         
                 <article class="box4">
                     <h4> Ustengrav </h4>
                     <div class="img4"></div>
                 </article>
-                
             </section>
         </div>
-        
 
-        
-    
         <div class="footp">
             Basaxelm © Webpage Test 2022
         </div>

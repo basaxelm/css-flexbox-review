@@ -1,6 +1,9 @@
-body{
+*{
     padding: 0px; /* Conviene especificar estas propiedades siempre */
     margin: 0px; /* Los navegadores suelen aplicar algo de padding y margin en default */
+}
+
+body{
     background: #1e003d;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
@@ -15,21 +18,19 @@ body{
     flex-flow: row nowrap;
     justify-content: center;
     align-items: center;
+    padding-bottom: 10px;
 }
 
 .imgicon{
     content:url(skyrim/helmeticon.png);
     max-width: 5%;
     height: auto;
-    order: 1;
 }
 
 .header h1{
-    width: 20%;
-    height: auto;
     color: white;
-    text-align: center;
-    order: 2;
+    padding-left: 5px;
+    font-size: calc(0.75em + 2vmin);
 }
 
 .navmenu{
@@ -37,20 +38,20 @@ body{
     display: flex;
     flex-flow: column nowrap;
     align-content: center;
+    padding-bottom: 10px;
 }
 
 .navmenu ul{
+    /* border: 5px solid green; */
     padding: 0px;
     display: flex;
-    flex-flow: row nowrap;
+    flex-flow: row wrap;
     justify-content: space-around;
 }
 
 .navmenu ul li{
+    /* border: 5px solid rgb(226, 0, 247); */
     list-style: none;
-    width: 100%;
-    height: auto;
-    text-align: center;
 }
 
 .navmenu ul li a{
@@ -65,21 +66,50 @@ body{
 
 .sidemenu{
     background: rgb(99, 0, 0);
-    padding: 10px;
+    padding-left: 10px;
+    padding-top: 10px;
     width: 20%;
     height: auto;
     color: white;
     display: flex;
     flex-flow: column nowrap;
-    justify-content: top;
     align-items: flex-start;
     order: 2;
 }
+@media (max-device-width: 641px) { /*max-device-width para responsive mobile device*/
+    .midpage{
+        display: flex;
+        flex-flow: row wrap-reverse;
+        justify-content: center;
+    }
+    .sidemenu{
+        width: 100%;
+        padding-bottom: 10px;
+    }
+    .container1{
+        width:100%;
+        padding-top: 30px;
+    }
+}
+@media (max-width: 700px) { /*max-device-width para responsive mobile device*/
+    .midpage{
+        display: flex;
+        flex-flow: row wrap-reverse;
+        justify-content: center;
+    }
+    .sidemenu{
+        width: 100%;
+        padding-bottom: 10px;
+    }
+    .container1{
+        width:100%;
+        padding-top: 30px;
+    }
+}
 
 .sidemenu h2{
-    width: 100%;
-    height: auto;
-    text-align: left;
+    font-size: calc(0.75em + 1vmin);
+    padding-bottom: 5px;
 }
 
 .inputbar{
@@ -90,74 +120,78 @@ body{
     background: black;
     color: white;
     width: 80%;
-    height: 500px;
+    height: auto;
+    min-height: 300px;
     display: flex; /* En lugar de utilizar la regla float, podemos usar display a través de flexbox */
     /*flex-direction: row;  Se ubican los elementos en forma horizontal (row) o vertical (column)*/
     /*flex-wrap: wrap;      Permite que el contenedor se pueda expandir si se acumulan muchos elementos */
     flex-flow: row wrap; /* Combina las dos reglas anteriores en una sola linea*/
     justify-content: space-around; /* Permite reubicar los elementos horizontalmente */
-    align-content: center; /* Permite reubicar los elementos verticalmente */
-    align-items: flex-start; /* Los elementos se alinearan de acuerdo a un tamaño */
+    align-content: flex-start; /* Permite reubicar los elementos verticalmente */
+    /* align-items: flex-end;  Los elementos se alinearan de acuerdo a un tamaño */
     order: 1;
 }
 
 .box1{
     background: darkgray;
-    width: 22%;    
-    height: 450px;
+    width: 150px;    
+    height: auto;
+    min-height: 200px;
     display: flex;
     flex-flow: column nowrap;
-    justify-content: top;
     align-items: center;
     order: 2; /* Especifica el orden en que aparecerá el elemento */
 } 
 
 .box1 h4{
-    width: 100%;
-    height: auto;
-    text-align: center;
+    /* width: 100%; */
+    /* height: auto; */
+    /* font-size: calc(0.75em + 1vmin); */
+    /* font-size: calc(0.5vw + 1vh); */
 }
 
 .img1{
     content:url(skyrim/valthume.png);
     max-width: 95%;
-    height: auto;
+    height: 150px;
+    object-fit: cover;
     border-radius: 10px;
     order: 2;
 }
 
 .box2{
     background: darkcyan;
-    width: 22%;    
-    height: 450px;
+    width: 150px;    
+    height: auto;
+    min-height: 200px;
     display: flex;
     flex-flow: column nowrap;
-    justify-content: top;
     align-items: center;
     order: 1;
 }
 
 .box2 h4{
-    width: 100%;
-    height: auto;
-    text-align: center;
+    /*width: 100%;
+    height: auto;*/
+    font-size: calc(0.75em + 1vmin);
 }
 
 .img2{
     content:url(skyrim/laberynthia.jpg);
     max-width: 95%;
-    height: auto;
+    height: 150px;
+    object-fit: cover;
     border-radius: 10px;
     order: 2;
 }
 
 .box3{
     background: darkolivegreen;
-    width: 22%;    
-    height: 450px;
+    width: 150px;    
+    height: auto;
+    min-height: 200px;
     display: flex;
     flex-flow: column nowrap;
-    justify-content: top;
     align-items: center;
     order: 3;
 }
@@ -171,18 +205,19 @@ body{
 .img3{
     content:url(skyrim/ysgramortumb.png);
     max-width: 95%;
-    height: auto;
+    height: 150px;
+    object-fit: cover;
     border-radius: 10px;
     order: 2;
 }
 
 .box4{
     background: darkgreen;
-    width: 22%;    
-    height: 450px;
+    width: 150px;    
+    height: auto;
+    min-height: 200px;
     display: flex;
     flex-flow: column nowrap;
-    justify-content: top;
     align-items: center;
     order: 4;
 }
@@ -196,7 +231,8 @@ body{
 .img4{
     content:url(skyrim/ustengrav.jpg);
     max-width: 95%;
-    height: auto;
+    height: 150px;
+    object-fit: cover;
     border-radius: 10px;
     order: 2;
 }
@@ -207,7 +243,3 @@ body{
     font-size: 100%;
     text-align: center;
 }
-
-/*  @media screen and (min-width: 500){
-    d
-} */
